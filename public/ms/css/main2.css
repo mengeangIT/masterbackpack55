@@ -1,0 +1,1133 @@
+.contactform label,
+.feedbackBox label,
+.applyPositionWork label {
+  color: #666666;
+  font-size: 13px;
+}
+
+.socialtop {
+
+  margin-top: 17px;
+  height: 36px;
+  overflow: hidden;
+}
+
+
+#feedback .recaptchaBox input[type="text"]#inputRecaptcha {
+  float: left;
+}
+
+#feedback input[type=radio]:not(old) {
+  width: 28px;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+}
+
+.textHeader {
+  /*  position: relative;*/
+
+}
+.textHeader h2 {
+  color: #f06927;
+  /*border-bottom: 1px solid @linegray;*/
+
+  /*text-shadow: -1px -1px 0 rgba(237, 28, 36, 0.05), 1px 1px 0 rgba(237, 28, 36, 0.20);*/
+
+  margin-bottom: 0;
+  /*font-weight: normal;*/
+
+  margin-top: 0px;
+
+  text-indent: -9999px;
+  display: block;
+  height: 48px;
+}
+.textHeader #textHeaderAward {
+  width: 260px;
+  background: url(../img/textHeader.png) no-repeat scroll -279px 0px;
+}
+.lang-en .textHeader #textHeaderAward {
+  background: url(../img/textHeader.png) no-repeat scroll -279px -64px;
+}
+.textHeader #textHeaderCareer {
+  width: 260px;
+  background: url(../img/textHeader.png) no-repeat scroll -1388px 0px;
+}
+.lang-en .textHeader #textHeaderCareer {
+  background: url(../img/textHeader.png) no-repeat scroll -1388px -64px;
+}
+.textHeader #textHeaderContact {
+  width: 140px;
+  background: url(../img/textHeader.png) no-repeat scroll -1666px 0px;
+}
+.lang-en .textHeader #textHeaderContact {
+  background: url(../img/textHeader.png) no-repeat scroll -1666px -64px;
+}
+
+.lang-en .textHeader #textHeaderCSR {
+  background: url(../img/textHeader.png) no-repeat scroll -834px -64px;
+}
+.textHeader #textHeaderHistory {
+  width: 260px;
+  background: url(../img/textHeader.png) no-repeat scroll 0px 0px;
+}
+.lang-en .textHeader #textHeaderHistory {
+  background: url(../img/textHeader.png) no-repeat scroll 0px -64px;
+}
+.textHeader #textHeaderNews {
+  width: 260px;
+  background: url(../img/textHeader.png) no-repeat scroll -3471px 0px;
+}
+.lang-en .textHeader #textHeaderNews {
+  background: url(../img/textHeader.png) no-repeat scroll -3471px -64px;
+}
+.textHeader #textHeaderTrainingcenter {
+  width: 270px;
+  background: url(../img/textHeader.png) no-repeat scroll -556px 0px;
+}
+.lang-en .textHeader #textHeaderTrainingcenter {
+  background: url(../img/textHeader.png) no-repeat scroll -556px -64px;
+}
+.textHeader #textHeaderActivity {
+  width: 260px;
+  background: url(../img/textHeader.png) no-repeat scroll -1804px 0px;
+}
+.lang-en .textHeader #textHeaderActivity {
+  background: url(../img/textHeader.png) no-repeat scroll -1804px -64px;
+}
+.textHeader #textHeaderBranch {
+  width: 260px;
+  background: url(../img/textHeader.png) no-repeat scroll -2915px 0px;
+}
+.lang-en .textHeader #textHeaderBranch {
+  background: url(../img/textHeader.png) no-repeat scroll -2915px -64px;
+}
+.textHeader #textHeaderCard {
+  width: 260px;
+  background: url(../img/textHeader.png) no-repeat scroll -2639px 0px;
+}
+.lang-en .textHeader #textHeaderCard {
+  background: url(../img/textHeader.png) no-repeat scroll -2639px -64px;
+}
+.textHeader #textHeaderFeedback {
+  width: 260px;
+  background: url(../img/textHeader.png) no-repeat scroll -3194px 0px;
+}
+.lang-en .textHeader #textHeaderFeedback {
+  background: url(../img/textHeader.png) no-repeat scroll -3194px -64px;
+}
+.textHeader #textHeaderHealthymenu {
+  width: 260px;
+  background: url(../img/textHeader.png) no-repeat scroll -2362px 0px;
+}
+.lang-en .textHeader #textHeaderHealthymenu {
+  background: url(../img/textHeader.png) no-repeat scroll -2362px -64px;
+}
+.textHeader #textHeaderPromotion {
+  width: 260px;
+  background: url(../img/textHeader.png) no-repeat scroll -2080px 0px;
+}
+.lang-en .textHeader #textHeaderPromotion {
+  background: url(../img/textHeader.png) no-repeat scroll -2080px -64px;
+}
+.textHeader #textHeaderAddressBook{
+  background: url(../img/textHeader/addressbook.png) no-repeat scroll left center;
+}
+.lang-th .textHeader #textHeaderAddressBook{
+  background: url(../img/textHeader/addressbook_th.png) no-repeat scroll left center;
+}
+.lang-th .textHeader #textHeaderForgetPassword{
+  background: url(../img/textHeader/forgetpassword_th.png) no-repeat scroll left center;
+}
+.textHeader #textHeaderForgetPassword{
+  background: url(../img/textHeader/forgetpassword.png) no-repeat scroll left center;
+}
+.textHeader #textHeaderRegistration{
+  background: url(../img/textHeader/registration.png) no-repeat scroll left center;
+}
+.lang-th .textHeader #textHeaderRegistration{
+  background: url(../img/textHeader/registration_th.png) no-repeat scroll left center;
+}
+.textHeader #textHeaderYourProfile{
+  background: url(../img/textHeader/yourprofile.png) no-repeat scroll left center;
+}
+.lang-th .textHeader #textHeaderYourProfile{
+  background: url(../img/textHeader/yourprofile_th.png) no-repeat scroll left center;
+}
+.textHeader #textHeaderCheckout{
+  background: url(../img/textHeader/checkoutorder.png) no-repeat scroll left center;
+}
+.lang-th .textHeader #textHeaderCheckout{
+  background: url(../img/textHeader/checkoutorder_th.png) no-repeat scroll left center;
+}
+
+.textHeader #textHeaderCopyright{
+  background: url(../img/textHeader/copyright_en.png) no-repeat scroll left center;
+}
+.lang-th .textHeader #textHeaderCopyright{
+  background: url(../img/textHeader/copyright_th.png) no-repeat scroll left center;
+}
+
+.textHeader #textHeaderTerms{
+  background: url(../img/textHeader/terms_en.png) no-repeat scroll left center;
+}
+.lang-th .textHeader #textHeaderTerms{
+  background: url(../img/textHeader/terms_th.png) no-repeat scroll left center;
+}
+
+
+.textHeader #textHeaderOrderComplete{
+  background: url(../img/textHeader/ordercomplete.png) no-repeat scroll left center;
+}
+.textHeader #textHeaderYourOrder{
+width: 137px;
+  background: url(../img/textHeader/yourorder.png) no-repeat scroll left center;
+}
+.lang-th .textHeader #textHeaderYourOrder{
+width: 243px;
+  background: url(../img/textHeader/yourorder_th.png) no-repeat scroll left center;
+}
+.textHeader .redbox {
+  width: 168px;
+  height: 7px;
+  background: #08a35d;
+  margin-bottom: 20px;
+  /*margin-top: -4px;*/
+
+}
+
+#select_datetime input, #select_datetime .add-on{
+  border: none;
+  background: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  color: #666666;
+  cursor: default;
+}
+ #select_datetime .add-on{
+  border: none;
+  background: none;
+ }
+#select_datetime .icon-th{
+  background: url(../img/checkout/icon_calendar.png) no-repeat scroll left center;
+  width: 24px;
+  height: 24px;
+}
+#checkout .additonNote textarea{
+  height: 90px;
+  resize: none;
+  border-radius: 0;
+}
+#checkout .additonNote span{
+  vertical-align: top;
+}
+#checkout .yourPoints input[readonly]{
+  border: none;
+  background: none;
+  text-align: right;
+  cursor: default;
+}
+#checkout .tableOrderListBox{
+  min-height: 100px;
+}
+
+
+#checkout #recommendMenuList li.media a img{width: 105px;}
+
+#checkout .dataProductItem .productPrice{line-height: 25px;}
+
+#healthymenu #mainHealthymemu #subHealthymemuList li a#menuShopStore,
+#healthymenu #mainHealthymemu #subHealthymemuList li a#menuDeliveryStore {
+  height: 35px;
+  width: 460px;
+  text-indent: -9999px;
+  padding: 0px;
+  border-width: 0px;
+  margin-right: 0px;
+  border-radius: 0px;
+  display: block;
+}
+#healthymenu #mainHealthymemu #subHealthymemuList li a#menuShopStore {
+  background: url("../img/healthymenu/sub-heathy-menu-full.png") no-repeat scroll 0px 0px;
+}
+.lang-en #healthymenu #mainHealthymemu #subHealthymemuList li a#menuShopStore {
+  background: url(../img/healthymenu/sub-heathy-menu-full-en.png) no-repeat scroll 0px 0px;
+}
+#healthymenu #mainHealthymemu #subHealthymemuList li a#menuShopStore:hover,
+#healthymenu #mainHealthymemu #subHealthymemuList li.active a#menuShopStore {
+  background: url("../img/healthymenu/sub-heathy-menu-full.png") no-repeat scroll 0px -36px;
+}
+.lang-en #healthymenu #mainHealthymemu #subHealthymemuList li a#menuShopStore:hover,
+.lang-en #healthymenu #mainHealthymemu #subHealthymemuList li.active a#menuShopStore {
+  background: url(../img/healthymenu/sub-heathy-menu-full-en.png) no-repeat scroll 0px -36px;
+}
+#healthymenu #mainHealthymemu #subHealthymemuList li a#menuDeliveryStore {
+  background: url("../img/healthymenu/sub-heathy-menu-full.png") no-repeat scroll -463px 0px;
+}
+.lang-en #healthymenu #mainHealthymemu #subHealthymemuList li a#menuDeliveryStore {
+  background: url(../img/healthymenu/sub-heathy-menu-full-en.png) no-repeat scroll -463px 0px;
+}
+#healthymenu #mainHealthymemu #subHealthymemuList li a#menuDeliveryStore:hover,
+#healthymenu #mainHealthymemu #subHealthymemuList li.active a#menuDeliveryStore {
+  background: url("../img/healthymenu/sub-heathy-menu-full.png") no-repeat scroll -463px -36px;
+}
+.lang-en #healthymenu #mainHealthymemu #subHealthymemuList li a#menuDeliveryStore:hover,
+.lang-en #healthymenu #mainHealthymemu #subHealthymemuList li.active a#menuDeliveryStore {
+  background: url(../img/healthymenu/sub-heathy-menu-full-en.png) no-repeat scroll -463px -36px;
+}
+
+/*#listProductBillBox{width: 228px;}*/
+.billShopDelivery .listProductBill.empty{padding-top: 10px; text-align: center;}
+
+.billTotalPrice .subtotalPriceBox{text-align: right;}
+#empty-cart p{text-align: right;margin-top: 0px;}
+
+#checkout .totalPriceBox .group label{
+	font-size: 12px;
+}
+.lang-th #checkout .totalPriceBox .group label{
+	width: 145px;
+}
+#checkout .totalPriceBox .group input[type="text"]{
+	float: left;
+}
+.lang-th #checkout .totalPriceBox .group input[type="text"]{
+	width: 75px;
+  margin-top: 1px;
+}
+#checkout .totalPriceBox .group span {
+	height: 26px;
+	/*line-height: 26px;*/
+	width: 20px;
+	float: left;
+	margin-left: 2px;
+}
+#checkout .textPromotionDiscount input[type="text"]{
+	float: left;
+}
+#checkout .textPromotionDiscount span{
+	height: 34px;
+	line-height: 34px;
+	width: 20px;
+	float: left;
+	margin-left: 2px;
+}
+
+#checkout .textPromotionDiscount label{
+	width: 85px;
+	height: 28px;
+	line-height: 34px;
+}
+
+#checkout .textPromotionDiscount p {
+	float: left;
+}
+
+#register .dataInformationBox1 h4{
+    font-weight: normal;
+    font-size: 22px;
+    font-family: 'Roboto', serif;
+
+}
+
+#checkout .titleRecommendMenu{
+  background: url('../img/checkout/recommened_menu.png') no-repeat 0 0;
+/*   width: 201px; */
+  height: 39px;
+  text-indent: -9999px;
+  border-bottom:1px solid #D9DCD8;
+
+}
+#checkout .checkoutProductBox h3{font-size: 28px;}
+#checkout .checkoutProductBox .confirmOrder h3{margin-bottom: 0px; margin-top: 0px; font-size: 28px;}
+
+#checkout #checkoutProductForm{border-right: 1px solid #D9DCD8;}
+
+#checkout .tableOrderList .productPrice{padding-top: 30px;}
+
+#checkout .additonNote{border-top: 1px solid #D9DCD8; padding: 20px 0 20px 20px; margin-right: 20px;}
+#checkout .codePromotionDiscount{background: #edfded; border-top: 1px solid #D9DCD8; padding: 0 0 10px 20px;}
+#checkout .codePromotionDiscount .textPromotionDiscount{
+  margin-top: 14px;
+}
+#checkout .codePromotionDiscount .textPromotionDiscount h4{margin-bottom: 3px;}
+#checkout .codePromotionDiscount .textPromotionDiscount h4,
+#checkout .codePromotionDiscount .formPromotionDiscount label{color: #669966;}
+#checkout .codePromotionDiscount .formPromotionDiscount{margin-top: 14px;}
+#checkout .inputCodePromotion{width: 160px; margin-right: 15px;}
+#checkout .tableOrderListBox{padding-right: 20px;}
+#checkout .additonNote textarea{width: 95%;}
+
+#checkout .yourPoints .textPromotionDiscount,
+#checkout .yourPoints .totalPriceBox{
+	background: #f8f8f8;
+/* 	padding: 0px 20px; */
+	/*height: 160px;*/
+  margin-top: 10px;
+	padding-top: 10px;
+}
+#checkout .yourPoints .textPromotionDiscount,
+#checkout .yourPoints .totalPriceBox .group{padding: 0px 20px;}
+
+#checkout .yourPoints .totalPriceBox #grandTotalPrice{
+	background: #fef7fa;
+	/*clear: both;*/
+	/*height: 37px;*/
+}
+
+#checkout .yourPoints .textPromotionDiscount #inputPoint{color: #f06927; margin-left: 62px; padding-right: 0px;}
+
+#checkout .textPromotionDiscount .inputUsePoint,
+#checkout .textPromotionDiscount .inputPoint{
+width: 60px;
+margin-left: 54px;
+}
+
+#checkout .deliveryAddress{
+	margin-right: 20px;
+	border-bottom: 1px solid #D9DCD8;
+}
+#checkout .deliveryAddress .deliveryAddresssHeaderBox{
+	border-top: 1px solid #D9DCD8;
+	margin-top:20px;
+	padding-top: 15px;
+}
+#checkout .deliveryAddress .deliveryAddresssHeaderBox h3{margin-top: 0px; font-size: 28px;}
+
+#checkout .detailAddress{border-left: 1px solid #D9DCD8; padding-left: 20px; padding-bottom: 20px;}
+#checkout .detailAddress .detailAddressData table tr td{line-height: 32px;}
+.lang-th #checkout .detailAddress .detailAddressData table tr td.titleAddressData{width: 124px;}
+#checkout .detailAddress .detailAddressData table tr td.infoAddressData .btnEdit{
+	background: url("../img/member/addressbook/btn_edit.png") no-repeat scroll center bottom ;
+    width: 46px;
+    text-indent: -9999px;
+    display: block;
+    float: left;
+    margin-right: 20px;
+}
+#checkout .detailAddress .detailAddressData table tr td.infoAddressData .btnDelete{
+	background: url("../img/member/addressbook/btn_delete.png") no-repeat scroll center bottom ;
+    width: 56px;
+    text-indent: -9999px;
+    display: block;
+    float: left;
+}
+.paymentMethod,
+.paymentMethod,
+.taxReceipt{
+	border-top: 1px solid #D9DCD8;
+	margin-right: 10px;
+	margin-top: 20px;
+}
+#checkout #recommendMenuList li.media a.btnOrderNow{color: #666;}
+#checkout #recommendMenuList li.media a.btnOrderNow img{width: 39px; height: 41px; margin-right: 3px;}
+
+.popupYourOrder tr td{line-height: 16px;}
+.popupYourOrder .yourOrderMenuList{}
+.popupYourOrder .yourOrderQuantity{text-align: center;}
+.popupYourOrder .yourOrderPrice,.popupYourOrder .listPriceData{text-align: right;}
+
+.popupYourOrder tfoot td{border-top: none;}
+.popupYourOrder tfoot td.grandtotal{border-top: 1px;}
+
+.orderidYourOrder .yourorderdetail_modal{color: #666;}
+
+
+.billShopDelivery .btnbillPrice a{text-align: right; display: block;}
+.menu-slide .container .menu-slide-content .time span{
+	/*font-family: "psl_kandalighter";*/
+	font-weight: normal;
+}
+
+#listProductBill input.cart-item-text{
+    width: 40px;
+    border-radius: 0px;
+    padding: 1px 6px;
+}
+
+#listProductBill div.spinedit .icon-chevron-down {
+top: 1px;
+left: -4px;
+}
+form#listProductBill span.productPriceItem{
+	position: relative;
+	top:-5px;
+}
+
+
+
+#yourprofile .formYourProfile .accountInfo h4,
+.accountInfo h4,
+#addressbook .titleAddressBox .titleAddress h4{
+  /*font-family: "psl_kanda_proregular";*/
+  font-weight: bold;
+  font-size: 32px;
+  margin: 8px 0 !important;
+}
+
+#registersuccess .bestSellerProductRBox h3 img,
+#registerunsuccess .bestSellerProductRBox h3 img{
+  margin-top: -15px;
+}
+
+#registersuccess .bestSellerProductDetailR,
+#registerunsuccess .bestSellerProductDetailR{
+  border-bottom: 1px solid #D9DCD8;
+  margin-bottom: 20px;
+}
+
+#registersuccess .bestSellerProductDetailR h4,
+#registerunsuccess .bestSellerProductDetailR h4{
+  font-size: 18px;
+}
+
+#registersuccess .price-addtocart .price-unit,
+#registerunsuccess .price-addtocart .price-unit{
+  margin-top: 10px;
+}
+#registersuccess .price-addtocart .addtocart .btnAddtocart,
+#registerunsuccess .price-addtocart .addtocart .btnAddtocart{
+color: #666666;
+text-decoration: underline;
+}
+
+#registerunsuccess .recheckEmail label{
+  font-size: 14px;
+}
+#registerunsuccess .recheckEmail input[type='text']{
+  border-radius: 0px;
+  height: 24px;
+}
+#registerunsuccess .recheckEmail #btnCheck{
+    background: url("../img/member/btn_check.png") no-repeat scroll center bottom ;
+    width: 86px;
+    height: 33px;
+    border:none;
+    border-radius: 0px;
+    text-indent: -9999px;
+}
+#registerunsuccess .recheckEmail #btnCheck:hover{
+    background: url("../img/member/btn_check_active.png") no-repeat scroll center bottom ;
+}
+
+#checkout #recommendMenuList li.media .price-addtocart{
+	border-bottom: 1px solid #D9DCD8;
+	padding-bottom: 10px;
+}
+#checkout #recommendMenuList li.media .price-addtocart .price-unit{
+	margin-top: 10px;
+}
+
+#checkout #recommendMenuList li.media .price-addtocart .btnAddtocart{
+	color: #666666;
+	text-decoration: underline;
+}
+#checkout #recommendMenuList li.media .price-addtocart .btnAddtocart img{
+	width: 39px;
+}
+
+.listProductBestSeller p, .listProductFavorite p {
+    text-align: center;
+}
+
+.recommendMenuBox #recommendMenuList .media-body p {
+    min-height: 60px;
+}
+
+#checkout .inputTaxReceipt{
+    resize: none;
+    height: 90px;
+    width: 100%;
+    border-radius: 0;
+}
+.block-disabled{
+    position: relative;
+}
+.block-disabled .disabled-block{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.block-disabled.disabled .disabled-block{
+    display: block;
+}
+
+#yourorder .orderidYourOrder .yourorderdetail_modal {
+color: #f06927;
+text-decoration: underline;
+}
+
+
+.orderComplete,.orderError{
+	padding-top: 60px;
+	padding-bottom: 30px;
+	text-align: center;
+}
+#checkoutsuccess h3 img{margin-top: -40px;}
+#checkoutsuccess .orderError h3 img{margin-top: -10px;}
+#checkoutsuccess p{font-size: 18px;}
+/*#checkoutsuccess .linegray{margin: 0 auto; width: 610px;}*/
+#checkoutsuccess .contentDetail{margin-top: 20px;}
+#checkoutsuccess .contentDetail .textThanks{font-size: 20px;margin-top: 20px;margin-bottom: 20px;}
+.iconStatus{}
+
+#checkoutsuccess .btnBackDelivery,
+#checkoutsuccess .btnSubmitAgain{
+	height: 33px;
+    border:none;
+    border-radius: 0px;
+    text-indent: -9999px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 30px;
+    outline: 0;
+}
+
+#checkoutsuccess .btnBackDelivery{
+    background: url("../img/ordercomplete/money/btn_back_delivery.png") no-repeat scroll center center ;
+    width: 200px;
+}
+#checkoutsuccess .btnSubmitAgain{
+	background: url("../img/ordercomplete/money/btn_submit_again.png") no-repeat scroll center center ;
+    width: 271px;
+}
+
+#productShopStore .thumbnails .healthymenuProductBox .btnAddtocart p{
+	border-bottom: none;
+	padding-top: 2px;
+}
+/*
+.formLogin #logoutBox{
+	display: block;
+}
+*/
+.formLogin #logoutBox .customerUserBox{
+	background: url("../img/member/login/icon-user.png") no-repeat scroll left 4px ;
+}
+.formLogin #logoutBox li a.customerUser{
+	padding-left: 10px;
+}
+
+
+#productShopStore .thumbnails .healthymenuProductBox .btnAddtocartText{float: left; outline: 0;}
+#productShopStore .thumbnails .healthymenuProductBox .btnAddtocartImg{float: right; outline: 0;}
+
+
+.mainmenu .mainsubmenu .active-bar{
+	background-size: contain;
+}
+body{
+}
+.dtpicker-components .dtpicker-compValue{font-size: 18px !important;}
+
+#branch .branchMapBox .sidebarListBranch .accordion-heading .accordion-toggle{
+	padding: 6px 0px 6px 6px;
+}
+.branch-map-cluster span {
+  bottom: -3px;
+}
+#branch .branchMapBox .sidebarListBranch h3{
+	font-family: Tahoma;
+}
+
+
+/* Member System Translate */
+
+.lang-th #register #step1Account .formCustomerStep .btnNext,
+.lang-th #register #step2Personal .formCustomerStep .btnNext,
+.lang-th #register #step3Address .formCustomerStep .btnNext,
+.lang-th #register #step4Confirm .formCustomerStep .btnNext,
+.lang-th #forgetpassword .forgetpasswordDetailBox .formCustomerStep .btnNext{
+	width: 123px;
+	background: url("../img/member/btn_next_th.png") #f06927 no-repeat scroll center center ;
+}
+.lang-th #register #step1Account .formCustomerStep .btnNext:hover,
+.lang-th #register #step2Personal .formCustomerStep .btnNext:hover,
+.lang-th #register #step3Address .formCustomerStep .btnNext:hover,
+.lang-th #register #step4Confirm .formCustomerStep .btnNext:hover
+.lang-th #forgetpassword .forgetpasswordDetailBox .formCustomerStep .btnNext:hover{
+	width: 123px;
+	background: url("../img/member/btn_next_active_th.png") #006536 no-repeat scroll center center ;
+}
+
+.lang-th #register #step1Account .formCustomerStep .btnBack,
+.lang-th #register #step2Personal .formCustomerStep .btnBack,
+.lang-th #register #step3Address .formCustomerStep .btnBack,
+.lang-th #register #step4Confirm .formCustomerStep .btnBack,
+.lang-th #forgetpassword .forgetpasswordDetailBox .formCustomerStep .btnBack{
+	background: url("../img/member/btn_back_th.png") no-repeat scroll center center ;
+}
+.lang-th #register #step1Account .formCustomerStep .btnBack:hover,
+.lang-th #register #step2Personal .formCustomerStep .btnBack:hover,
+.lang-th #register #step3Address .formCustomerStep .btnBack:hover,
+.lang-th #register #step4Confirm .formCustomerStep .btnBack:hover,
+.lang-th #forgetpassword .forgetpasswordDetailBox .formCustomerStep .btnBack:hover
+{
+	background: url("../img/member/btn_back_active_th.png") no-repeat scroll center center ;
+}
+
+.lang-th #register #step4Confirm .registerDetailBox #btnBox .btnConfirm,
+.lang-th #forgetpassword .forgetpasswordDetailBox .formCustomerStep .btnGetPassword{
+	background: url("../img/member/btn_confirm_th.png") no-repeat scroll center center ;
+}
+#forgetpassword .forgetpasswordDetailBox .formCustomerStep .btnGetPassword{
+	margin-left: 20px;
+}
+.lang-th #register #step4Confirm .registerDetailBox #btnBox .btnConfirm:hover,
+.lang-th #forgetpassword .forgetpasswordDetailBox .formCustomerStep .btnGetPassword:hover{
+	background: url("../img/member/btn_confirm_active_th.png") no-repeat scroll center center ;
+}
+.lang-th #register .registerThanksBox .textSendEmail .btnResend:hover{
+	background: url("../img/member/btn_resend_active_th.png") #006536 no-repeat scroll center center ;
+}
+.lang-th #forgetpassword #recoverPasswordBox #btnResend{
+	width: 159px;
+	background: url("../img/member/forgetpassword/btn_resend_th.png") no-repeat scroll center center ;
+}
+.lang-th #forgetpassword #recoverPasswordBox #btnResend:hover{
+	background: url("../img/member/forgetpassword/btn_resend_active_th.png") no-repeat scroll center center ;
+}
+.lang-th .formLogin #loginBox li a.btnlogin{
+	width: 63px;
+	background: url("../img/member/login/login-register_th.png") no-repeat scroll 0 0 ;
+}
+.lang-th .formLogin #loginBox li a.btnlogin:hover,
+.lang-th .formLogin #loginBox li.active a.btnlogin
+{
+	background: url("../img/member/login/login-register_active_th.png") no-repeat scroll 0 0 ;
+}
+
+.lang-th .formLogin #loginBox li a.btnregister{
+    width: 96px;
+	background: url("../img/member/login/login-register_th.png") no-repeat scroll -61px 0 ;
+}
+.lang-th .formLogin #loginBox li a.btnregister:hover,
+.lang-th .formLogin #loginBox li.active a.btnregister{
+	background: url("../img/member/login/login-register_active_th.png") no-repeat scroll -61px 0 ;
+}
+.lang-th .formLogin #loginBox li a.btnforgetpassword{
+	background: url("../img/member/login/login-register_th.png") no-repeat scroll -158px 0 ;
+}
+.lang-th .formLogin #logoutBox li a.btnlogout{
+		background: url("../img/member/login/logout_th.png") no-repeat scroll 0 0 ;
+}
+.lang-th .formLogin #loginBox li a.btnforgetpassword:hover,
+.lang-th .formLogin #loginBox li.active a.btnforgetpassword{
+	background: url("../img/member/login/login-register_active_th.png") no-repeat scroll -158px 0 ;
+}
+.lang-th .formLogin #logoutBox li a.btnlogout:hover{
+		background: url("../img/member/login/logout_active_th.png") no-repeat scroll 0 0 ;
+}
+
+.lang-th #yourprofile .changePasswordDes .changePasswordRight{
+	background: url("../img/member/profile/text_changepassword_th.png") no-repeat scroll center center ;
+  background-size: contain;
+}
+.lang-th #yourprofile .changePasswordDes a.btnOK{
+	width: 81px;
+	border-radius: 0px;
+	background: url("../img/member/profile/btn_ok_th.png") no-repeat scroll 0 0 ;
+}
+.lang-th #yourprofile .changePasswordDes a.btnOK:hover{
+	background: url("../img/member/profile/btn_ok_active_th.png") no-repeat scroll 0 0 ;
+}
+
+.lang-th #checkout .btnContinueShoppingBox .btnContinueShopping{
+	background: url("../img/checkout/btn_continue_th.png") no-repeat scroll 0 0 ;
+}
+.lang-th #checkout .btnContinueShoppingBox .btnContinueShopping:hover{
+	background: url("../img/checkout/btn_continue_active_th.png") no-repeat scroll 0 0 ;
+}
+.lang-th #checkout .tableOrderList .detailProduct .delete-cart-item{
+	background: url("../img/checkout/btn_delete_product_th.png") no-repeat scroll left bottom ;
+}
+.lang-th #checkout .titleRecommendMenu{
+	background: url("../img/checkout/recommened_menu_th.png") no-repeat scroll 0 0  ;
+}
+
+.lang-th #checkout .deliveryAddress .btnAddNew{
+	background: url("../img/checkout/btn_add_new_th.png") no-repeat scroll right bottom;
+}
+.lang-th #checkout .deliveryAddress .btnAddNew:hover{
+	background: url("../img/checkout/btn_add_new_active_th.png") no-repeat scroll right bottom;
+}
+
+.lang-th #checkout .detailAddress .detailAddressData table tr td.infoAddressData .btnEdit{
+	background: url("../img/member/addressbook/btn_edit2_th.png") no-repeat scroll center bottom ;
+}
+.lang-th #checkout .detailAddress .detailAddressData table tr td.infoAddressData .btnDelete{
+	background: url("../img/member/addressbook/btn_delete_th.png") no-repeat scroll center bottom ;
+}
+.lang-th #checkout .btnConfirmOrder{
+	background: url("../img/checkout/btn_confirm_th.png") no-repeat scroll 0 0 ;
+}
+.lang-th #checkout .btnConfirmOrder:hover{
+	background: url("../img/checkout/btn_confirm_active_th.png") no-repeat scroll 0 0 ;
+}
+
+#privacy-page .textHeader ,
+#terms-page .textHeader{
+  position: relative;
+}
+#privacy-page .textHeader .iconCopyright,
+#terms-page .textHeader .iconCopyright {
+  background: url("../img/copyright/icon-terms.png") no-repeat scroll right top;
+  width: 110px;
+  height: 78px;
+  position: absolute;
+  right: 0;
+  top: -29px;
+}
+
+#privacy-page #privacy ,
+#terms-page #terms{
+	padding: 0px 20px;
+}
+
+#checkout .textPromotionDiscount label{
+	width: 95px;
+	margin-right: 10px;
+}
+.lang-th #checkout .textPromotionDiscount label{
+	width: 98px;
+}
+
+.lang-th #checkout .deliveryAddress .btnAddNew{
+	box-shadow: none;
+}
+
+#card .mkcardBox .cardRow .lineCardRow, #carddetaail .mkcardBox .cardRow .lineCardRow{
+	position: relative;
+	top: -63px;
+}
+#award .yearAward .rowYearAwardBox .awardThumbnail {
+position: relative;
+height: 180px;
+}
+#award .yearAward .rowYearAwardBox .awardDescription {
+overflow: hidden;
+margin-top: 20px;
+}
+#csr .listCsr ul li p{
+	font-size: 12px;
+}
+#csr .listCsr ul li .readmore a{
+	font-size: 12px;
+}
+.lang-en #healthymenu .productListHMBox .new, .lang-en #healthydelivery .productListHMBox .new,
+#healthymenu .productListHMBox .new, #healthydelivery .productListHMBox .new {
+width: 157px;
+height: 51px;
+}
+.lang-en #healthymenu .productListHMBox .best_seller, .lang-en #healthydelivery .productListHMBox .best_seller,
+#healthymenu .productListHMBox .best_seller, #healthydelivery .productListHMBox .best_seller {
+width: 157px;
+height: 51px;
+}
+
+#healthydelivery .boxpage{padding-bottom: 0px;}
+.buttonBack a{
+	background: url(../img/responsive/arrow-circle-left.svg) no-repeat scroll 0 0;
+	display: block;
+	height: 22px;
+	padding-left: 30px;
+	padding-top: 3px;
+}
+.btnBackToTop a{
+	background: url(../img/responsive/arrow-circle-up.svg) no-repeat scroll 0 0;
+	display: block;
+	height: 24px;
+	padding-left: 30px;
+	padding-top: 3px;
+	width: 100px;
+	float: right;
+}
+.eq-ie8 .menu-popup .healthmenu-modal-box{
+	background-color: #ffffff !important;
+}
+.eq-ie8 #checkout input[type="text"],
+.eq-ie8 #checkout .totalPriceBox .group input[type="text"],
+.eq-ie8 #checkout .yourPoints .textPromotionDiscount #inputPoint,
+.eq-ie8 #checkout .textPromotionDiscount .inputUsePoint
+{
+	line-height: 26px;
+}
+#checkout #recommendMenuList li.media .price-addtocart .btnAddtocart{
+	background: url('../img/healthymenu/icon-tray.png') no-repeat scroll right center;
+	padding-right: 40px;
+	height: 41px;
+	display: block;
+	padding-top: 10px;
+
+}
+
+#register .form-horizontal .control-group{
+	margin-bottom: 18px;
+}
+.modal.fade.fade-only {
+  top: 10%;
+  -webkit-transition: opacity 0.3s linear, top 0.3s ease-out;
+  -moz-transition: opacity 0.3s linear, top 0.3s ease-out;
+  -o-transition: opacity 0.3s linear, top 0.3s ease-out;
+  transition: opacity 0.3s linear, top 0.3s ease-out;
+}
+.modal.fade.fade-only.in {
+  top: 10%;
+}
+.lang-th .mainmenu .submenuInvestor .mainsubmenu ul li{
+	height: 24px !important;
+}
+.lang-en .mainmenu .submenuInvestor .mainsubmenu ul li{
+	width: 200px;
+	height: 24px !important;
+}
+
+#yourorder-page .popupYourOrder
+{
+	border: 10px solid #f06927;
+	border-radius: 0px;
+}
+
+#checkout #myModal .semicolonBox{
+	margin-left: 10px;
+}
+#checkout #myModal .form-horizontal .control-label{
+	width: 168px;
+}
+#checkout #myModal .btnBack,
+#checkout #myModal .btnNext {
+  width: 86px;
+  height: 33px;
+  border: none;
+  text-indent: -9999px;
+  border-radius: 0px;
+}
+#checkout #myModal .btnBack {
+  margin-right: 20px;
+  width: 105px;
+  background: url("../img/member/btn_cancel.png") no-repeat scroll center center;
+}
+#checkout #myModal .btnBack:hover {
+  background: url("../img/member/btn_cancel_active.png") no-repeat scroll center center;
+}
+#checkout #myModal .btnNext {
+  background: url("../img/member/btn_save.png") no-repeat scroll center center;
+}
+#checkout #myModal .btnNext:hover {
+  background: url("../img/member/btn_save_active.png") no-repeat scroll center center;
+}
+
+.menu-popup .healthmenu-modal-box{
+  min-height: 0;
+}
+#delivery-page .listDeliveryProduct{
+	/*max-height: 520px;*/
+	overflow: auto;
+	/*margin-top: 40px;*/
+}
+
+#delivery-page .listDeliveryProduct .imgMenuPopup{
+	margin-top: 10px;
+}
+
+#delivery-page  .menu-popup .healthmenu-modal-box .img img{
+	max-width: 280px;
+  max-height: 260px;
+  width: auto;
+}
+
+#healthydelivery .menu-popup .price-addtocartPopup .addtocart{
+  margin-top: 6px;
+}
+#healthydelivery .menu-popup .price-addtocartPopup .price-unit{
+  margin-top: 18px;
+}
+.menu-popup .detail{
+  max-height: 100px;
+}
+#delivery-page  .listDeliveryProduct .addtocart-desc .addtocart{
+	margin-top: 25px;
+}
+#delivery-page  .listDeliveryProduct .addtocart-desc .price-unit{
+  margin-top: 27px;
+}
+#productShopStore .thumbnails .healthymenuProductBox .price-addtocart.addtocart-desc{
+  border-bottom: none;
+}
+#delivery-page .listDeliveryProduct .addtocart-select .addtocart{
+  margin-top: 23px;
+}
+#delivery-page .listDeliveryProduct .addtocart-select .price-unit{
+  margin-top: 0;
+}
+#delivery-page #productShopStore .thumbnails .healthymenuProductBox .price-addtocartPopup{
+ padding-top: 0px;
+}
+.dtpicker-buttonCont .dtpicker-buttonClear{
+	display: none;
+}
+.dtpicker-buttonCont .dtpicker-buttonSet{
+	margin: 0 auto;
+	display: block;
+	float: none !important;
+}
+.modal-address .modal-body{
+  max-height: 350px;
+}
+
+.lang-en .formLogin #logoutBox li a.btnlogout{
+  width: 74px;
+}
+
+/* Fix ie8  */
+
+.eq-ie8 #healthydelivery .sidebarRightDelivery .timeDeliverySetting .textTimeSetting{
+  font-size: 32px;
+}
+
+.eq-ie8 .header,
+.eq-ie8 .yield-content,
+.eq-ie8 .footer,
+{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+
+.eq-ie8 #home .yield-content{
+  margin-top: -14px;
+}
+.eq-ie8 #healthydelivery #productShopStore .thumbnails .healthymenuProductBox{
+  width: 152px;
+}
+/*.eq-ie8 #healthydelivery .menu-popup .menuPopupRedBox{
+  background: #ff3333 !important;
+}*/
+.eq-ie8 .menu-popup .menuPopupRedBox{
+   background: #f06927 !important;
+}
+
+
+#newsdetail .buttonBack a{
+  margin-top: 8px;
+}
+.lang-th .formLogin #loginBox li a.btnforgetpassword{
+  width: 68px;
+}
+.slide-share-link{
+  margin-top: 3px;
+}
+.iconContact{
+  height: 34px;
+}
+/*.dateBox .iconDate{*/
+  /*background: url('../img/responsive/about/clock-red.svg') no-repeat scroll 0 0;*/
+/*}*/
+/*.phoneBox .iconPhone{*/
+  /*background: url('../img/responsive/about/phone.svg') no-repeat scroll 0 0;*/
+/*}*/
+/*.emailBox .iconEmail{*/
+  /*background: url('../img/responsive/about/letter.svg') no-repeat scroll 0 0;*/
+/*}*/
+/*.faxBox .iconFax{*/
+  /*background: url('../img/responsive/about/fax.svg') no-repeat scroll 0 0;*/
+/*}*/
+iframe[name="google_conversion_frame"] {
+    display: none;
+}
+
+
+
+
+
+/* ICON ADDON WITH INPUT*/
+.center-block {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input-group .icon-addon .form-control {
+    border-radius: 0;
+}
+
+.icon-addon {
+    position: relative;
+    color: #999999;
+    display: block;
+}
+
+.icon-addon:after,
+.icon-addon:before {
+    display: table;
+    content: " ";
+}
+
+.icon-addon:after {
+    clear: both;
+}
+
+.icon-addon.addon-md .glyphicon,
+.icon-addon .glyphicon,
+.icon-addon.addon-md .fa,
+.icon-addon .fa {
+    position: absolute;
+    z-index: 2;
+    left: 10px;
+    font-size: 14px;
+    width: 20px;
+    margin-left: -2.5px;
+    text-align: center;
+    padding: 10px 0;
+    top: 1px
+}
+
+.icon-addon.addon-lg .form-control {
+    line-height: 1.33;
+    height: 46px;
+    font-size: 18px;
+    padding: 10px 16px 10px 40px;
+}
+
+.icon-addon.addon-sm .form-control {
+    height: 30px;
+    padding: 5px 10px 5px 28px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.icon-addon.addon-lg .fa,
+.icon-addon.addon-lg .glyphicon {
+    font-size: 18px;
+    margin-left: 0;
+    left: 11px;
+    top: 4px;
+}
+
+.icon-addon.addon-md .form-control,
+.icon-addon .form-control {
+    padding-left: 30px;
+    float: left;
+    font-weight: normal;
+}
+
+.icon-addon.addon-sm .fa,
+.icon-addon.addon-sm .glyphicon {
+    margin-left: 0;
+    font-size: 12px;
+    left: 5px;
+    top: -1px
+}
+
+.icon-addon .form-control:focus + .glyphicon,
+.icon-addon:hover .glyphicon,
+.icon-addon .form-control:focus + .fa,
+.icon-addon:hover .fa {
+    color: #2580db;
+}
+/* ICON ADDON WITH INPUT*/

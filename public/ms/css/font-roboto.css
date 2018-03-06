@@ -1,0 +1,173 @@
+#mainmenuHeader li a {
+    height: 41px;
+    padding: 0px;
+    border-width: 0px;
+    margin-right: 0px;
+    border-radius: 0px;
+    margin-top: 0px;
+}
+.mainmenu .mainsubmenu ul li a {
+    color: #fff !important;
+    font-family: 'Hanuman','Roboto', serif !important;
+
+    text-decoration: none;
+    font-size: 13.3px !important;
+}
+
+
+#mainmenuHeader > li > a {
+    display: block;
+    /*font-family: 'Roboto', serif !important;*/
+    font-size: 1.2em;
+    padding: 12px 17px 10px 17px;
+}
+.footer #navFooter h4 {
+    font-size: 16px !important;
+    font-family: 'Hanuman','Roboto', serif;
+    color: #333333;
+}
+.footer .nav a {
+    font-family: 'Hanuman','Roboto', serif;
+    color: #666666;
+    font-size: 1em;
+    line-height: 21px;
+}
+.m-l-0, .m-x-0 {
+    margin-left: 0!important;
+}
+
+
+.footer .copyright-bar .copyright a {
+    color: #666666;
+    font-size: 1em;
+    font-family: 'Hanuman','Roboto', serif;
+}
+.textHeaderNoImg h2 {
+    font-family: 'Tangerine', serif !important;
+    /* font-size: 3.75em; */
+    font-size: 2.3em !important;
+    color: #5cb85c !important;
+    font-weight: normal !important;
+}
+
+
+/*responsive menu bar */
+.gn-menu a.gn-icon {
+    font-family: 'Hanuman','Roboto', serif !important;
+    padding-left: 25px !important;
+    font-size: 1.1rem !important;
+}
+.nav-lang-login-regis a {
+    font-family: 'Hanuman','Roboto', serif !important;
+    font-size: 0.9rem !important;
+
+    line-height: 53px;
+    color: #89dab1 !important;
+    margin: 0 !important;
+}
+/*responsive head menu mobile*/
+.textHeaderMobile {
+    font-family: 'Tangerine', serif !important;
+    background: #018a44;
+    color: #fff;
+    text-align: center;
+    height: 40px;
+    font-size: 20px !important;
+    padding-top: 4px;
+    margin-bottom: 15px;
+}
+/*resposive card*/
+.btnAddtoCartResponsive, .btnRedResponsive {
+    background: #08a35d;
+    color: #ffffff;
+    font-family: 'Hanuman','Roboto', serif !important;
+    font-size: 18px !important;
+    line-height: 30px;
+    cursor: pointer;
+    display: block;
+}
+.checkout-notify-cart-empty {
+    border-radius: 8px;
+    border: 1px solid #dfe2de;
+    color: #666666;
+    padding: 20px 10px;
+    font-family: 'Hanuman','Roboto', serif !important;
+    font-size: 17px !important;
+}
+.footer .formEmailfooter button span {
+    font-family: 'Tangerine', serif !important;
+    font-size: 14px !important;
+    color: #ffffff;
+    position: absolute;
+    left: 10px;
+    top: 2px !important;
+}
+.footer .followfooterBox .formEmailfooter input[type='email'] {
+    height: 26px !important;
+    line-height: 24px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #cccccc;
+    padding-left: 4px;
+}
+.lang-en .textHeader #textHeaderHealthymenu {
+    background: url(../img/textHeader.png) no-repeat scroll -2362px -64px; !important;
+}
+/*menu page*/
+#mainHealthtmenuList .nav-item a {
+    font-family: 'Hanuman','Roboto', serif !important;
+    color: #666666;
+    font-size: 0.9rem !important;
+    font-weight: bold;
+    display: block;
+}
+/*Sub menu healthy food*/
+.textSubHeader h3 {
+    font-family: 'Tangerine', serif !important;
+    color: #006633;
+    margin-bottom: 0px;
+    line-height: 42px;
+    font-weight: normal;
+    font-size: 2.1em !important;
+}
+/*add to card delivery*/
+#healthydelivery .sidebarRightDelivery .timeDeliverySetting h3 {
+    white-space: nowrap;
+    font-family: 'Tangerine', serif !important;
+    font-size: 2.1em !important;
+    color: #108d4f;
+}
+.textOrderFood {
+    font-size: 1.4rem !important;
+    font-family: 'Hanuman','Roboto', serif !important;
+    line-height: 22px !important;
+}
+#healthydelivery .sidebarRightDelivery .timeDeliverySetting .textTimeSetting {
+    font-size: 1.4rem !important;
+    color: #08a35d;
+    font-family: 'Hanuman','Roboto', serif !important;
+    line-height: 27px !important;
+}
+.h3, h3 {
+    font-size: 1.4rem !important;
+}
+#branch .tabBranchBox .boxGrayBar {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #e1e1e1;
+    height: 73px;
+}
+#branch .tabBranchBox .boxGrayBar2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #e1e1e1;
+    height: 73px;
+}
+div.spinedit .fa-chevron-up, div.spinedit .fa-chevron-down {
+    position: relative !important;
+    cursor: pointer !important;
+    width: 12px !important;
+    left: 8px !important;
+}
