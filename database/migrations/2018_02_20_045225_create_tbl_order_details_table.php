@@ -15,7 +15,7 @@ class CreateTblOrderDetailsTable extends Migration
     {
         Schema::create('tbl_order_details', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('pro_id')->nullable()->index();
+            $table->integer('product_id')->index();
             $table->integer('order_id')->nullable()->index();
             $table->string('rowId')->index()->nullable();
             $table->string('title')->index()->nullable();

@@ -57,6 +57,7 @@ Route::get('/total-qty','MsController@totalQty');
 //===================customer card===============
 Route::get('/login', 'CustomerController@customerLogin');
 Route::post('/login', 'CustomerController@postCustomerLogin');
+
 Route::get('/register', 'CustomerController@customerRegister');
 Route::get('/forgot-password', 'CustomerController@forgotPassword');
 Route::post('/logout', 'CustomerController@postLogout');

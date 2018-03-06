@@ -15,11 +15,11 @@ class TblOrderDetail extends Model
     |--------------------------------------------------------------------------
     */
 
-    protected $table = 'tbl_types';
+    protected $table = 'tbl_order_details';
     protected $primaryKey = 'id';
-     public $timestamps = true;
+     public $timestamps = false;
     // protected $guarded = ['id'];
-     protected $fillable = ['t_des_en','t_des_kh','in_putter','status'];
+     protected $fillable = ['pro_id','order_id','rowId','title','image','qty','price'];
     // protected $hidden = [];
     // protected $dates = [];
 

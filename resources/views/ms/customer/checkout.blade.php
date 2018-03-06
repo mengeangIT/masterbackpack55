@@ -79,7 +79,7 @@
                                         <label>Delivery Fee : </label>
                                     </div>
                                     <div class="col-xs-6 text-right">$
-                                        <input type="number" value="0.00" name="inputDeliveryFee" style="border: none" class="inputDeliveryFee"  readonly>
+                                        <input type="number" value="0.00" name="" style="border: none" class="inputDeliveryFee"  readonly>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -104,10 +104,6 @@
                                     <div class="col-xs-4 p-a-0">Phone : </div>
                                     <div class="col-xs-8 p-a-0 text-left">{{$customers->phone}}</div>
                                 </div>
-                                 <div class="row">
-                                    <div class="col-xs-4 p-a-0">Email : </div>
-                                    <div class="col-xs-8 p-a-0 text-left">{{$customers->email}}</div>
-                                </div>
 
                             </div>
                         </div>
@@ -123,7 +119,7 @@
                                     <div class="input-group-addon">
                                         <i class="fa fa-calendar"></i>
                                     </div>
-                                    <input type="text" value="{{$datemin}}" placeholder="month/date/year *" name = "delivery_date" class="form-control pull-right" id="datepicker-mobile">
+                                    <input type="text" value="{{$datemin}}" placeholder="month/date/year *" name = "date" class="form-control pull-right" id="datepicker-mobile">
                                 </div>
                             </div>
                         </div>
@@ -133,7 +129,7 @@
                                 <div class="form-group">
                                     <div class="input-group">
 
-                                        <input type="text" name="delivery_time" class="form-control timepicker">
+                                        <input type="text" name="time" class="form-control timepicker">
                                         <div class="input-group-addon">
                                             <i class="fa fa-clock-o"></i>
                                         </div>
@@ -141,7 +137,7 @@
                                 </div>
                             </div>
                         </div>
-                        <input type="hidden" name="customer_id" value="{{ session('customer_id') }}" required>
+                        <input type="hidden" name="cust_id" value="{{ session('customer_id') }}" required>
                         <div class="clear"></div>
                         <button type="submit" class=" btnGreenResponsive text-center m-t btnConfirmOrderResponsive">Confirm Check Out
                         </button>
@@ -219,11 +215,7 @@
                                                                     <td class="semicolonAddressData"> </td>
                                                                     <td class="infoAddressData" id="infoAddressBookData_locationtype" >{{$customers->phone}}</td>
                                                                 </tr>
-                                                                <tr>
-                                                                    <td valign="top" class="titleAddressData fontred">Email : </td>
-                                                                    <td class="semicolonAddressData"> </td>
-                                                                    <td class="infoAddressData" id="infoAddressBookData_direction_guide" >{{$customers->email}}</td>
-                                                                </tr>
+
                                                                 <tr>
                                                                     <td class="titleAddressData fontred"> </td>
                                                                     <td class="semicolonAddressData"> </td>
@@ -259,7 +251,7 @@
                                                 <div class="input-group-addon">
                                                     <i class="fa fa-calendar"></i>
                                                 </div>
-                                                <input type="text"  value="{{$datemin}}"  name="delivery_date" class="form-control deliveryDate" required>
+                                                <input type="text"  value="{{$datemin}}"  name="date" class="form-control deliveryDate" required>
                                             </div>
                                         </div>
                                     </div>
@@ -273,7 +265,7 @@
                                         <div class="bootstrap-timepicker">
                                             <div class="form-group">
                                                 <div class="input-group">
-                                                    <input type="text" value="" name="delivery_time" class="form-control deliveryTime" required>
+                                                    <input type="text" value="" name="time" class="form-control deliveryTime" required>
                                                     <div class="input-group-addon">
                                                         <i class="fa fa-clock-o"></i>
                                                     </div>
@@ -285,7 +277,7 @@
                                 </div><br>
 
 
-                                <input type="hidden" name="customer_id" value="{{ session('customer_id') }}" required>
+                                <input type="hidden" name="cust_id" value="{{ session('customer_id') }}" required>
 
                                 <div class="btnConfirmOrderBox" >
                                     <button type="submit" class="btnConfirmOrder">CONFIRM ORDER NOW</button>
@@ -294,21 +286,16 @@
                         </form>
                     </div>
                     <?php
-                        $item_recommend = \App\Models\Item::where('status','=','ACTIVE')->where('pro_status','=','ACTIVE')->get();
+                        $item_recommend = \App\Models\TblProduct::where('status','=','ACTIVE')->where('pro_promotion','=','ACTIVE')->get();
                     ?>
                     <div class="col-xs-4 hidden-md-down">
                         <div class="recommendMenuBox">
                             <h3 class="titleRecommendMenu">RECOMMENDED MENUS</h3>
                             <ul id="recommendMenuList" class="media-list">
                                 @foreach($item_recommend as $item)
-                                    @php
-                                        $imds = json_decode($item->image,true);
-                                        $img = count($imds)>0?$imds[0]:'';
-                                    @endphp
-
                                     <li class="media">
                                         <a href="#" class="pull-right">
-                                            <img class="media-object" alt="" src="{{ url('img/cache/img300x300/'.\App\Helpers\Glb::get_basename($img)) }}">
+                                            <img class="media-object" alt="" src="{{ url('img/cache/img300x300/'.\App\Helpers\ITPC::get_basename($item->image)) }}">
                                         </a>
                                         <div class="media-body">
                                             <h4 class="media-heading fontred">{{$item->title}}</h4>
@@ -323,7 +310,7 @@
                                                    data-id="{{$item->id}}"
                                                    data-price="{{$item->price}}"
                                                    data-name="{{$item->title}}"
-                                                   data-image="{{ url('img/cache/img300x300/'.\App\Helpers\Glb::get_basename($img)) }}">add to cart
+                                                   data-image="{{ url('img/cache/img300x300/'.\App\Helpers\ITPC::get_basename($item->image)) }}">add to cart
                                                 </a>
                                             </div>
                                             <div class="clear"></div>
@@ -400,19 +387,7 @@
 
 
                                                     </div>
-                                                    <div class="form-group row">
-                                                        <label class="form-control-label col-xs-2 text-right p-r-0" for="inputBuilding">Email : <span class="semicolonBox">:</span></label>
-                                                        <div class="col-xs-4">
-                                                            <input type="text" class="form-control" name="email" value="{{$customers->email}}" id="inputBuilding">
-                                                            @if ($errors->has('email'))
-                                                                <span class="help-block">
-                                                                    <strong>{{ $errors->first('email') }}</strong>
-                                                                </span>
-                                                            @endif
-                                                        </div>
 
-
-                                                    </div>
 
 
                                                 </div>

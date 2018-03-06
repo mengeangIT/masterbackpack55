@@ -16,7 +16,7 @@ class CustomerController extends Controller
         return redirect('login');
     }
     function postCustomerLogin(Request $request){
-        $u= Customer::where('name',$request->email)->orWhere('email',$request->email)->first();
+        $u= Customer::where('name',$request->phone)->orWhere('phone',$request->phone)->first();
         if($u)
         {
             if(\Hash::check($request->password, $u->password))
@@ -53,7 +53,7 @@ class CustomerController extends Controller
     function postCustomerCheckout(Request $request)
     {
         $order = new TblOrder();
-        $order->customer_id = $request->input('customer_id');
+        $order->cust_id = $request->input('cust_id');
         $order->date = $request->input('date');
         $order->time = $request->input('time');
         $order->total_qty = Cart::count();
@@ -71,7 +71,7 @@ class CustomerController extends Controller
 
                 foreach (Cart::content() as $k => $v) {
                     $order_detials = new TblOrderDetail();
-                    $order_detials->item_id = $v->id;
+                    $order_detials->pro_id = $v->id;
                     $order_detials->rowId = $v->rowId;
                     $order_detials->order_id = $order->id;
                     $order_detials->title = $v->name;
@@ -111,7 +111,7 @@ class CustomerController extends Controller
     function OrderInfo($id = null)
     {
         if ($id != null) {
-            $OrderInfo = Order::orderBy('created_at', 'desc')->where('customer_id', '=', $id)->get();
+            $OrderInfo = TblOrder::orderBy('created_at', 'desc')->where('cust_id', '=', $id)->get();
             return view('ms.customer.your_order', ['OrderInfo' => $OrderInfo, 'phone' => Customer::select('phone')->find($id), 'customer_info' => Customer::find($id)]);
         } else {
             return redirect('/customer/your-order');
@@ -120,9 +120,9 @@ class CustomerController extends Controller
 
     function repeatOrder($id = null, $u_id = null)
     {
-        $orderinfo = Order::find($id);
+        $orderinfo = TblOrder::find($id);
         if ($orderinfo) {
-            $order_detail = OrderDetail::where('order_id', $orderinfo->id)->get();
+            $order_detail = TblOrderDetail::where('order_id', $orderinfo->id)->get();
             foreach ($order_detail as $k) {
                 $order_detail_id = $k->id;
                 $order_detail_title = $k->title;
@@ -132,7 +132,7 @@ class CustomerController extends Controller
                 Cart::add($order_detail_id, $order_detail_title, $order_detail_qty, $order_detail_price, ['image' => $order_detail_image]);
             }
             $orderinfo->delete();
-            $order_detail__ = OrderDetail::where('order_id', $id);
+            $order_detail__ = TblOrderDetail::where('order_id', $id);
             $order_detail__->delete();
             return redirect('/customer/checkout' . '/' . $u_id);
         }

@@ -34,15 +34,13 @@
                 <div class="row text-center">
                     <div class="col-xs-12 col-lg-4 col-lg-offset-4">
                         <form method="POST" action="{{ url('/login') }}" accept-charset="UTF-8" class="form-login-mobile">
-                            {{ csrf_field() }}
-                            {{--<input name="_token" type="hidden" value="68PFdgGVP8eTHO9cPteg47EJaxPwXSE92QQ3nwdj">--}}
-                            {{--<input name="url_intended" type="hidden" value="https://www.mkrestaurant.com/en/yourorder">--}}
-                            <div class="form-group row {{ $errors->has('email') ? ' has-error' : '' }}">
+                            {{ csrf_field() }}}}
+                            <div class="form-group row {{ $errors->has('phone') ? ' has-error' : '' }}">
                                 <div class="col-xs-12">
-                                    <input id="email" class="form-control" placeholder="Email Address *" name="email" type="email" value="{{ old('email') }}" required autofocus>
-                                    @if ($errors->has('email'))
+                                    <input id="phone" class="form-control" placeholder="phone" name="phone" type="text" value="{{ old('phone') }}" required autofocus>
+                                    @if ($errors->has('phone'))
                                         <span class="help-block">
-                                        <strong>{{ $errors->first('email') }}</strong>
+                                        <strong>{{ $errors->first('phone') }}</strong>
                                     </span>
                                     @endif
                                 </div>

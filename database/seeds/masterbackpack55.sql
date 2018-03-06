@@ -1,17 +1,17 @@
 /*
  Navicat Premium Data Transfer
 
- Source Server         : mySql
+ Source Server         : mysql
  Source Server Type    : MySQL
  Source Server Version : 100130
  Source Host           : localhost:3306
- Source Schema         : ms55
+ Source Schema         : masterbackpack55
 
  Target Server Type    : MySQL
  Target Server Version : 100130
  File Encoding         : 65001
 
- Date: 05/03/2018 22:40:48
+ Date: 06/03/2018 17:10:02
 */
 
 SET NAMES utf8mb4;
@@ -360,7 +360,7 @@ CREATE TABLE `tbl_feedbacks`  (
 DROP TABLE IF EXISTS `tbl_order_details`;
 CREATE TABLE `tbl_order_details`  (
   `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
-  `pro_id` int(11) NULL DEFAULT NULL,
+  `pro_id` int(11) NOT NULL,
   `order_id` int(11) NULL DEFAULT NULL,
   `rowId` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL DEFAULT NULL,
   `title` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL DEFAULT NULL,
@@ -375,7 +375,12 @@ CREATE TABLE `tbl_order_details`  (
   INDEX `tbl_order_details_order_id_index`(`order_id`) USING BTREE,
   INDEX `tbl_order_details_rowid_index`(`rowId`) USING BTREE,
   INDEX `tbl_order_details_title_index`(`title`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci ROW_FORMAT = Compact;
+) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci ROW_FORMAT = Compact;
+
+-- ----------------------------
+-- Records of tbl_order_details
+-- ----------------------------
+INSERT INTO `tbl_order_details` VALUES (1, 2, 8, '143eac89c45b3b0cdb1ccee87ec7ee37', 'ភេសជ្ជះ', 'http://127.0.0.1:8000/img/cache/img300x300/18419_1520180616_1825.png', 3, 11, NULL, NULL, NULL);
 
 -- ----------------------------
 -- Table structure for tbl_orders
@@ -387,16 +392,27 @@ CREATE TABLE `tbl_orders`  (
   `total_qty` double NULL DEFAULT 0,
   `total_amt` double NULL DEFAULT 0,
   `total_tax` double NULL DEFAULT 0,
+  `total_fee` double NULL DEFAULT NULL,
   `total_dis` double NULL DEFAULT 0,
   `total_payable` double NULL DEFAULT 0,
   `date` date NULL DEFAULT NULL,
-  `time` time(0) NULL DEFAULT NULL,
+  `time` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL DEFAULT NULL,
+  `view_alert` int(11) NULL DEFAULT 0,
+  `status` enum('NEW','PAID','CANCEL') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'NEW',
   `created_at` timestamp(0) NULL DEFAULT NULL,
   `updated_at` timestamp(0) NULL DEFAULT NULL,
   `deleted_at` timestamp(0) NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE,
   INDEX `tbl_orders_cust_id_index`(`cust_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci ROW_FORMAT = Compact;
+) ENGINE = InnoDB AUTO_INCREMENT = 9 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci ROW_FORMAT = Compact;
+
+-- ----------------------------
+-- Records of tbl_orders
+-- ----------------------------
+INSERT INTO `tbl_orders` VALUES (5, 1, 3, 33, 3.3, NULL, 0, 36.3, '2018-03-06', '01:19 pm', 2, 'NEW', '2018-03-06 06:58:41', '2018-03-06 10:06:42', NULL);
+INSERT INTO `tbl_orders` VALUES (6, 1, 3, 33, 3.3, NULL, 0, 36.3, '2018-03-06', '01:19 pm', 0, 'CANCEL', '2018-03-06 06:59:19', '2018-03-06 10:01:46', NULL);
+INSERT INTO `tbl_orders` VALUES (7, 1, 3, 33, 3.3, NULL, 0, 36.3, '2018-03-06', '01:19 pm', 2, 'NEW', '2018-03-06 07:01:29', '2018-03-06 10:07:16', NULL);
+INSERT INTO `tbl_orders` VALUES (8, 1, 3, 33, 3.3, NULL, 0, 36.3, '2018-03-06', '01:19 pm', 4, 'NEW', '2018-03-06 07:02:32', '2018-03-06 10:09:03', NULL);
 
 -- ----------------------------
 -- Table structure for tbl_positions
@@ -533,6 +549,21 @@ CREATE TABLE `tbl_types`  (
 -- Records of tbl_types
 -- ----------------------------
 INSERT INTO `tbl_types` VALUES (3, '{\"km\":\"\\u1797\\u17c1\\u179f\\u1787\\u17d2\\u1787\\u17c7\",\"en\":\"Drink\"}', 'administrator', 'ACTIVE', '2018-03-04 16:13:16', '2018-03-04 16:21:54', NULL);
+
+-- ----------------------------
+-- Table structure for user_notifications
+-- ----------------------------
+DROP TABLE IF EXISTS `user_notifications`;
+CREATE TABLE `user_notifications`  (
+  `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) NULL DEFAULT NULL,
+  `notification_type` enum('PURCHASE REQUEST','PURCHASE ORDER','PURCHASE','CUSTOMER REQUEST NEW','CUSTOMER REQUEST NEW Census','CUSTOMER REQUEST CHANGE POWER','CUSTOMER REQUEST CHANGE POWER Census','CUSTOMER REQUEST CHANGE NAME','CUSTOMER REQUEST CHANGE NAME Census','CUSTOMER REQUEST REPAIRING','CUSTOMER REQUEST REPAIRING Census') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL DEFAULT NULL,
+  `created_at` timestamp(0) NULL DEFAULT NULL,
+  `updated_at` timestamp(0) NULL DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE,
+  INDEX `user_notifications_user_id_index`(`user_id`) USING BTREE,
+  INDEX `user_notifications_notification_type_index`(`notification_type`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Table structure for users

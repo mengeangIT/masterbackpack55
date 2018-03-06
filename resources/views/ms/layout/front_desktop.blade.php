@@ -81,13 +81,13 @@
                                 <div id="formLoginDetail" class="formLoginDetail">
                                     <form method="POST" action="{{ url('/login') }}" class="form-horizontal">
                                         {{ csrf_field() }}
-                                        <div class="control-group {{ $errors->has('email') ? ' has-error' : '' }}">
+                                        <div class="control-group {{ $errors->has('phone') ? ' has-error' : '' }}">
                                             <div class="controls">
-                                                <input type="email" id="inputEmail" name="email" placeholder="EMAIL"
-                                                       value="{{ old('email') }}" required autofocus>
-                                                @if ($errors->has('email'))
+                                                <input type="text" id="inputPhone" name="phone" placeholder="phone"
+                                                       value="{{ old('phone') }}" required autofocus>
+                                                @if ($errors->has('phone'))
                                                     <span class="help-block">
-                                                                    <strong>{{ $errors->first('email') }}</strong>
+                                                                    <strong>{{ $errors->first('phone') }}</strong>
                                                                 </span>
                                                 @endif
                                             </div>

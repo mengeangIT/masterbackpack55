@@ -61,7 +61,7 @@
                                     @if($info->order_status != 'Paid')
                                         <tr class=" statusWait ">
                                             <td class="{{$info->id}}"><a href="javascript:void(0);" data-href="#" class="yourorderdetail_modal">MS {{$info->id}}</a></td>
-                                            <td class="dateYourOrder">{{$info->delivery_date}} / {{$info->delivery_time}}</td>
+                                            <td class="dateYourOrder">{{$info->date}} / {{$info->time}}</td>
                                             <td class="quatityYourOrder">{{$info->total_qty}}</td>
                                             <td class="totalYourOrder">{{$info->total_payable}} $</td>
                                             <td class="toYourOrder">{{$phone->phone}}</td>
@@ -122,7 +122,7 @@
                                             </thead>
                                             <tbody>
                                             @php
-                                                $order_detail_data = \App\Models\OrderDetail::where('order_id','=',$info->id)->get();
+                                                $order_detail_data = \App\Models\TblOrderDetail::where('order_id','=',$info->id)->get();
                                             @endphp
                                             @foreach($order_detail_data as $order_detail)
                                             <tr>
@@ -170,7 +170,7 @@
                                     {{--<span>,  {{$customer_info->province_city}}</span>--}}
                                 {{--</p>--}}
                                 <p>{{_t('Your order will arrive before')}}
-                                    <span style="text-decoration: underline;">{{$info->delivery_date}} / {{$info->delivery_time}}</span>
+                                    <span style="text-decoration: underline;">{{$info->date}} / {{$info->time}}</span>
                                 </p>
                             </div>
                         </strong>

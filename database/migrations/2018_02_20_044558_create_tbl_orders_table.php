@@ -19,10 +19,13 @@ class CreateTblOrdersTable extends Migration
             $table->double('total_qty')->nullable()->default(0);
             $table->double('total_amt')->nullable()->default(0);
             $table->double('total_tax')->nullable()->default(0);
+            $table->double('total_fee')->nullable()->default(0);
             $table->double('total_dis')->nullable()->default(0);
             $table->double('total_payable')->nullable()->default(0);
             $table->date('date')->nullable();
-            $table->time('time')->nullable();
+            $table->string('time')->nullable();
+            $table->integer('view_alert')->default(0)->nullable();
+            $table->string('status',['NEW','PAID','CANCEL'])->default('NEW');
 
             $table->timestamps();
             $table->softDeletes();

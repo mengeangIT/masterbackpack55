@@ -32,7 +32,8 @@
     <link rel="stylesheet" href="{{ asset('vendor/backpack/overlays/backpack.bold.css') }}">
 
     @yield('after_styles')
-
+    @section('graph_style')
+    @show
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -136,7 +137,8 @@
     <script src="{{ asset('vendor/adminlte') }}/plugins/slimScroll/jquery.slimscroll.min.js"></script>
     <script src="{{ asset('vendor/adminlte') }}/plugins/fastclick/fastclick.js"></script>
     <script src="{{ asset('vendor/adminlte') }}/dist/js/app.min.js"></script>
-
+    @section('graph_script')
+    @show
     <!-- page script -->
     <script type="text/javascript">
         /* Store sidebar state */

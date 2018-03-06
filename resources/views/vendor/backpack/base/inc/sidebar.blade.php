@@ -14,6 +14,22 @@
                 <!-- ================================================ -->
                 <li><a href="{{ backpack_url('dashboard') }}"><i class="fa fa-dashboard"></i>  <span>{{ trans('backpack::base.dashboard') }}</span></a></li>
 
+
+                <li class="treeview">
+                    <a href="#">  <i class="fa fa-pie-chart"></i>
+                        <span>Order</span> <span class="pull-right-container"> <i class="fa fa-angle-left pull-right"></i>  </span>
+                    </a>
+                    <ul class="treeview-menu">
+
+                        <li><a href="{{ backpack_url('order') }}"><i class="fa fa-cog"></i> <span>Order</span></a></li>
+                        <li><a href="{{ url('admin/all-order') }}"><i class="fa fa-cog"></i> <span>All Order</span></a></li>
+                        <li><a href="{{ url('admin/new-order') }}"><i class="fa fa-cog"></i> <span>New Order</span></a></li>
+                        <li><a href="{{ url('admin/cancel-order') }}"><i class="fa fa-cog"></i> <span>Cancel Order</span></a></li>
+                        <li><a href="{{ url('admin/paid-order') }}"><i class="fa fa-cog"></i> <span>Paid Order</span></a></li>
+
+                    </ul>
+                </li>
+
                 <li class="treeview">
                     <a href="#">  <i class="fa fa-pie-chart"></i>
                         <span>CUSTOMER</span> <span class="pull-right-container"> <i class="fa fa-angle-left pull-right"></i>  </span>
@@ -24,6 +40,8 @@
 
                     </ul>
                 </li>
+
+
                 <li class="treeview">
                     <a href="#">  <i class="fa fa-pie-chart"></i>
                         <span>PROMOTION</span> <span class="pull-right-container"> <i class="fa fa-angle-left pull-right"></i>  </span>
