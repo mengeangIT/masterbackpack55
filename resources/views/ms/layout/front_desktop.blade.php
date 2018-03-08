@@ -119,18 +119,20 @@
                                             <span class="customerFullname">{{ session('customer_name') }}</span>
                                         </a>
                                     </li>
+
                                     <li>
-                                        <a class="btnlogout" href="{{ route('logout') }}"
+                                        <a class="btnlogout" href="{{ url('logout') }}"
                                            onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                             Logout
                                         </a>
 
-                                        <form id="logout-form" action="{{url('logout')}}" method="POST" style="display: none;">
+                                        <form id="logout-form" action="{{url('logout')}}" method="get" style="display: none;">
                                             {{ csrf_field() }}
                                         </form>
 
                                     </li>
+
                                 </ul>
                                 {{--=====================End Member Login Show======================--}}
                                 {{--=====================Member Login Show======================--}}

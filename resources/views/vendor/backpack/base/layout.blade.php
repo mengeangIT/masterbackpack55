@@ -206,7 +206,52 @@
 
 
     </script>
-
+    <script type="text/javascript">
+        function loadOrderNotification() {
+            $.ajax({
+                url: '{{url('/admin/load-order-notification')}}',
+                type: 'GET',
+                dataType: 'json',
+                data: {
+                },
+                success: function (data) {
+                    if(data.length > 0){
+                        var html = '';
+                        $.each(data,function () {
+                            var item = $(this)[0];
+                            html += '<li>' +
+                                '<a href="{{url('admin/order-detail')}}/'+item.id+'">' +
+                                '<i class="fa fa-shopping-cart text-green"></i><span>'+item.delivery_date+'</span> <span>$ '+item.total_payable+'</span>' +
+                                '</a>' +
+                                '</li>'
+                        });
+                        $('.count-order-notification').html(data.length);
+                        $('.alert-new-order-class').html(html);
+                    }else{
+                        $('.count-order-notification').html('0');
+                        $('.alert-new-order-class').html('');
+                    }
+                },
+                error: function () {
+                }
+            });
+        }
+        $(function () {
+            loadOrderNotification();
+            $('body').delegate('.delete-upload-img','click',function () {
+                $(this).parent().parent().remove();
+            });
+            $('body').delegate('input','focus',function (e) {
+                $(this)
+                    .one('mouseup', function () {
+                        $(this).select();
+                        return false;
+                    })
+                    .select();
+            });
+            setInterval(function(){ loadOrderNotification(); }, 10000);
+        });
+    </script>
     @include('backpack::inc.alerts')
 
     @yield('after_scripts')

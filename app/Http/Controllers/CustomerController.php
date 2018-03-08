@@ -12,9 +12,9 @@ use Gloudemans\Shoppingcart\Facades\Cart;
 class CustomerController extends Controller
 {
     function postLogout(Request $request){
-
-        return redirect('login');
+        return redirect('/');
     }
+
     function postCustomerLogin(Request $request){
         $u= Customer::where('name',$request->phone)->orWhere('phone',$request->phone)->first();
         if($u)
