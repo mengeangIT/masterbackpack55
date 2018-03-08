@@ -1,7 +1,7 @@
 <?php 
 
  return [
-    "home" => "home",
-    "ms_card" => "MS Card",
-    "privilege" => "privilege"
+     'home'=> 'home',
+    'ms_card' => 'ms_card',
+    'privilege' => 'privilege'
 ];

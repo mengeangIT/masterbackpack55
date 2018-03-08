@@ -27,7 +27,7 @@
 			 &nbsp; {{ trans('backpack::langfilemanager.switch_to') }}: &nbsp;
 			<select name="language_switch" id="language_switch">
 				@foreach ($languages as $lang)
-				<option value="{{ url(config('backpack.base.route_prefix', 'admin')."/language/texts/{$lang->abbr}") }}" {{ $currentLang == $lang->abbr ? 'selected' : ''}}>{{ $lang->name }}</option>
+				<option value="{{ url(config('backpack.base.route_prefix', 'admin')."/my-language/texts/{$lang->abbr}") }}" {{ $currentLang == $lang->abbr ? 'selected' : ''}}>{{ $lang->name }}</option>
 				@endforeach
 			</select>
 		</small>
@@ -52,7 +52,7 @@
 				id="lang-form"
 				class="form-horizontal"
 				data-required="{{ trans('admin.language.fields_required') }}"
-		  		action="{{ url(config('backpack.base.route_prefix', 'admin')."/language/texts/{$currentLang}/{$currentFile}") }}"
+		  		action="{{ url(config('backpack.base.route_prefix', 'admin')."/my-language/texts/{$currentLang}/{$currentFile}") }}"
 		  		>
 				{!! csrf_field() !!}
 				<button type="submit" class="btn btn-success submit pull-right hidden-xs hidden-sm" style="margin-top: -60px;">{{ trans('backpack::crud.save') }}</button>

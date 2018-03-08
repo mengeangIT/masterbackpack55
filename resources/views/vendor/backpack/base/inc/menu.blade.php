@@ -17,15 +17,8 @@
       <!-- ========================================================= -->
       <!-- ========== Top menu right items (ordered left) ========== -->
       <!-- ========================================================= -->
-        <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
-                <i class="fa fa-globe"></i> Translations<span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu" role="menu">
-                <li class=""><a href="{{ url(config('backpack.base.route_prefix', 'admin').'/language') }}"><i class="fa fa-flag-checkered"></i> Languages</a></li>
-                <li class=""><a href="{{ url(config('backpack.base.route_prefix', 'admin').'/language/texts') }}"><i class="fa fa-language"></i> Site texts</a></li>
-            </ul>
-        </li>
+        <li><a href="{{ url('lang/en') }}"><i class="fa fa-btn fa-align-left"></i> En</a></li>
+        <li><a href="{{ url('lang/km') }}"><i class="fa fa-btn fa-align-left"></i> Km</a></li>
       <!-- <li><a href="{{ url('/') }}"><i class="fa fa-home"></i> <span>Home</span></a></li> -->
       @if (config('backpack.base.setup_auth_routes'))
         @if (Auth::guest())

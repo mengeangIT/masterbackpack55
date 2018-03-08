@@ -63,7 +63,7 @@ return [
     /*
     |-------------------
     | TRANSLATABLE CRUDS
-    |-------------------
+    |-------------------00000006
     */
 
     'show_translatable_field_icon' => true,
@@ -71,7 +71,8 @@ return [
 
     'locales' =>
         [
-        'en' => 'English',
+
+        "en" => "English",
         "km" => "Khmer",
         // "af_NA" => "Afrikaans (Namibia)",
         // "af_ZA" => "Afrikaans (South Africa)",

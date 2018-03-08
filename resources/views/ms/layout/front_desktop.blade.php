@@ -8,7 +8,7 @@
                 <div class="langHeader pull-right">
                     <ul class="nav nav-pills">
                         @php
-                            $langs = \Backpack\LangFileManager\app\Models\Language::where('active',1)->get();
+                            $langs = \ITPC\MyLangFileManager\app\Models\Language::where('active',1)->get();
                         @endphp
                         @foreach($langs as $row)
                             <li>

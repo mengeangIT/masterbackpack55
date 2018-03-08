@@ -1,0 +1,1 @@
+<li><a href="{{ url(config('backpack.base.route_prefix', 'admin') . '/my-setting') }}"><i class="fa fa-cog"></i> <span>My Settings</span></a></li>

@@ -258,7 +258,7 @@
                         <div class="col-xs-4 p-a-0">
 
                             @php
-                                $langs = \Backpack\LangFileManager\app\Models\Language::where('active',1)->get();
+                                $langs = \ITPC\MyLangFileManager\app\Models\Language::where('active',1)->get();
                             @endphp
                             @foreach($langs as $row)
                                 <a href="{{url('/lang?lan'.'='.$row->abbr)}}" class="col-xs-6 text-right">
@@ -285,7 +285,7 @@
                     <li class="nav-lang-login-regis">
                         <div class="col-xs-4 p-a-0 text-center switch-lang">
                             @php
-                                $langs = \Backpack\LangFileManager\app\Models\Language::where('active',1)->get();
+                                $langs = \ITPC\MyLangFileManager\app\Models\Language::where('active',1)->get();
                             @endphp
                             @foreach($langs as $row)
                                 <a href="{{url('/lang?lan'.'='.$row->abbr)}}" class="col-xs-6 text-right">

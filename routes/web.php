@@ -11,8 +11,14 @@
 |
 */
 
+Route::get('/lang/{l}', function ($l) {
+    $arr_lang = ['en', 'km'];
+    $la = in_array($l, $arr_lang) ? $l : 'en';
+    //session(['sess_lang' => $la]);
+    Session::put('lion.language_locale', $la);
 
-Route::get('/lang','Admin\LanguageController@changeLang');
+    return redirect()->back();
+});
 
 // ==============frontend======
 Route::get('/','MsController@home');

@@ -78,7 +78,7 @@ return [
     |
     */
 
-    'locale' => 'km',
+    'locale' => 'en',
 
     /*
     |--------------------------------------------------------------------------
@@ -91,7 +91,7 @@ return [
     |
     */
 
-    'fallback_locale' => 'km',
+    'fallback_locale' => 'en',
 
     /*
     |--------------------------------------------------------------------------
@@ -169,7 +169,7 @@ return [
         /*
          * Package Service Providers...
          */
-
+            \ITPC\MyLangFileManager\MyLangFileManagerServiceProvider::class,
         /*
          * Application Service Providers...
          */

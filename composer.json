@@ -36,10 +36,16 @@
     "autoload": {
         "classmap": [
             "database/seeds",
-            "database/factories"
+            "database/factories",
+            "packages/itpc/mylangfilemanager/src/app/Http/Controllers",
+            "packages/itpc/mylangfilemanager/src/app/Models",
+            "packages/itpc/mysettings/src/app/Http/Controllers",
+            "packages/itpc/mysettings/src/app/Models"
         ],
         "psr-4": {
-            "App\\": "app/"
+            "App\\": "app/",
+            "ITPC\\MyLangFileManager\\": "packages/itpc/mylangfilemanager/src",
+            "ITPC\\MySettings\\": "packages/itpc/mysettings/src"
         }
     },
     "autoload-dev": {
